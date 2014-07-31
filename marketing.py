@@ -41,7 +41,8 @@ class Marketing:
       self.adj[i].extend(temp)
       i+=1
       
-  #The method required by the problem, it loops through each node and if that node is not visited it calls the Depth First Search
+  #The method required by the problem, it loops through each node and if that node is not visited it calls 
+  #the Depth First Search
   #  Paramaters : Array of Strings
   #  Returns :    int
   #  Complexity : Worst Case - O(n^2*m) - Due to the call of DFS
