@@ -58,9 +58,11 @@ class Marketing:
         if not self.dfs(i, 0):
           return -1
       i += 1
+    # We must take 2 to the graph componet count to get the possible solutions. If one solution is
+    # possiable, so is it's inverse
     return 2**graph_componet_count
   
-  #The depth first search recursive method - Note recurison has a hight memory overhead for large datasets
+  #The depth first search recursive method - Note recurison has a high memory overhead for large datasets
   #iterative implamentation would work better for large sets. The DFS colors each node if it has not been visited.
   #If the node has been visted then it checks to see if the node is colored corretly
   #  Paramaters : int: position in the adjacency list, int: current color
